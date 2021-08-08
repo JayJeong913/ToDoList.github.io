@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="left_div">
+        <div id="clock_div">
+            <h1 id="clock">00:00:00</h1>
+        </div>
+        <div id="form_div">
+            <form id="loginForm" class="hidden">
+                <input required id="loginInput" placeholder="What is your Name?"/>
+            </form>
+            <!--<button id="submit">submit</button>-->
+            <h2 id="greeting" class="hidden"></h2>
+        </div>
+        <div id="quote_div">
+            <span></span><br>
+            <span></span>
+        </div>
+    </div>
+    
+    <div id="right_div">
+        <div id="weather_div">
+            <span></span>
+        </div>
+        <div id="todo_div">
+            <form id="todoForm">
+                <input id="todoInput" placeholder="Write to Do here."/>
+            </form>
+        </div>
+        <div id="todoList">
+            <ul id="todoBox"></ul>
+        </div>
+    </div>
+   
+    <script src="JS/login.js"></script>
+    <script src="JS/clock.js"></script>
+    <script src="JS/background.js"></script>
+    <script src="JS/quote.js"></script>
+    <script src="JS/weather.js"></script>
+    <script src="JS/todo.js"></script>
+</body>
+</html>
