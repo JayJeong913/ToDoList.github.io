@@ -6,4 +6,3 @@ const imgNum = bgImgArray[Math.floor(Math.random()*bgImgArray.length)];
 const bgImg = document.querySelector("body");
 
 bgImg.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(IMG/${imgNum})`;
-

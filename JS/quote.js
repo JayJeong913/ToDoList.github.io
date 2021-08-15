@@ -88,3 +88,4 @@ quote.innerText = quoteArray[quoteNum].quote;
 author.innerText = quoteArray[quoteNum].author;
 
 
+

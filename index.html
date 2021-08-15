@@ -8,10 +8,13 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="left_div">
-        <div id="clock_div">
-            <h1 id="clock">00:00:00</h1>
+    <div id="clock_div">
+        <h1 id="clock">00:00:00</h1>
+        <div id="weather_div">
+            <span></span>
         </div>
+    </div>
+    <div id="left_div">
         <div id="form_div">
             <form id="loginForm" class="hidden">
                 <input required id="loginInput" placeholder="What is your Name?"/>
@@ -20,25 +23,26 @@
             <h2 id="greeting" class="hidden"></h2>
         </div>
         <div id="quote_div">
-            <span></span><br>
-            <span></span>
+            <span id="quote"></span><br><br>
+            <span id="author"></span>
         </div>
     </div>
     
     <div id="right_div">
-        <div id="weather_div">
-            <span></span>
-        </div>
+
         <div id="todo_div">
             <form id="todoForm">
-                <input id="todoInput" placeholder="Write to Do here."/>
+                <input id="todoInput" placeholder="Do you have work to do today?"/>
             </form>
         </div>
-        <div id="todoList">
-            <ul id="todoBox"></ul>
+        <div id="todo_box">
+            <div id="todoList">
+                <ul id="todoUl"></ul>
+            </div>
         </div>
+        
     </div>
-   
+    
     <script src="JS/login.js"></script>
     <script src="JS/clock.js"></script>
     <script src="JS/background.js"></script>

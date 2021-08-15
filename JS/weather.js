@@ -12,11 +12,11 @@ function geoSuccess(position){
 
     fetch(url).then(resonpse => resonpse.json())
               .then(position => {
-                                    const temp = position.main.temp;
+                                    const temp = position.main.temp.toPrecision(3);
                                     const weather = position.weather[0].main;
                                     const humidity = position.main.humidity;
                                     const city = position.name;
-                                    weatherInfo.innerText = `${temp} / ${weather} / ${humidity} / ${city}`;
+                                    weatherInfo.innerText = `${temp}℃ / ${weather} / ${humidity}% / ${city}`;
                                 })
 }
 
